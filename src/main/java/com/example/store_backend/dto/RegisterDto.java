@@ -1,4 +1,4 @@
-package com.example.flyway_db_migration.dto;
+package com.example.store_backend.dto;
 
 
 import lombok.Builder;

@@ -1,7 +1,7 @@
-package com.example.flyway_db_migration.domain;
+package com.example.store_backend.domain;
 
 
-import com.example.flyway_db_migration.enums.UserRole;
+import com.example.store_backend.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
 
-import java.sql.Timestamp;
 import java.util.Date;
 
 @Data

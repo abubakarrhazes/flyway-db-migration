@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>flyway-db-migration</artifactId>
+	<artifactId>store-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>flyway-db-migration</name>
 	<description>A Project on how to use Flyway DB Migrations tools</description>

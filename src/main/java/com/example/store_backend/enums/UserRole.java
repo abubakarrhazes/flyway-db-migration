@@ -1,4 +1,4 @@
-package com.example.flyway_db_migration.enums;
+package com.example.store_backend.enums;
 
 public enum UserRole {
     user,
