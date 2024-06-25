@@ -1,9 +1,8 @@
 server:
   port: 8080
-
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/test_db
+    url: jdbc:postgresql://localhost:5432/store_backend_db
     username: postgres
     password: a2144
     driver-class-name: org.postgresql.Driver
@@ -21,6 +20,3 @@ spring:
     locations: classpath:db/migration
     username: postgres
     password: a2144
-
-
-
