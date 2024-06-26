@@ -58,13 +58,7 @@ public class Customer {
 
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "customer_address_mapping",
-            joinColumns = {
-                    @JoinColumn(name = "customer_id", referencedColumnName = "customerId")
-            },
-            inverseJoinColumns = {
-                    @JoinColumn(name = "address_id", referencedColumnName = "addressId")
-            })
+    
     private Map<String, Address> address = new HashMap<>();
 
 

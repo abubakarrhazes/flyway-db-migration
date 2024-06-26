@@ -37,10 +37,6 @@ public class Address {
     @NotNull(message = "State name cannot be null")
     private String state;
 
-    @NotNull(message = "Pincode cannot be null")
-    @Pattern(regexp = "[0-9]{6}", message = "Pincode not valid. Must be 6 digits")
-    private String pincode;
-
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JsonIgnore
