@@ -14,25 +14,36 @@ import java.util.List;
 
 public interface CustomerService {
 
-    public Customer addCustomer(Customer customer) throws CustomerException;
+    public Customer addCustomer(Customer customer)
+            throws CustomerException;
 
-    public Customer getLoggedInCustomerDetails(String token) throws CustomerNotFoundException;
+    public Customer getLoggedInCustomerDetails(String token)
+            throws CustomerNotFoundException;
 
-    public List<Customer> getAllCustomers(String token) throws CustomerNotFoundException;
+    public List<Customer> getAllCustomers(String token)
+            throws CustomerNotFoundException;
 
-    public Customer updateCustomer(CustomerUpdateDto customerUpdateDto, String token) throws CustomerNotFoundException;
+    public Customer updateCustomer(CustomerUpdateDto customerUpdateDto, String token)
+            throws CustomerNotFoundException;
 
-    public Customer updateCustomerMobileNoOrEmailId(CustomerUpdateDto customerUpdateDto, String token) throws CustomerNotFoundException;
+    public Customer updateCustomerMobileNoOrEmailId(CustomerUpdateDto customerUpdateDto, String token)
+            throws CustomerNotFoundException;
 
-    public Customer updateCreditCardDetails(String token, CreditCard card) throws CustomerException;
+    public Customer updateCreditCardDetails(String token, CreditCard card)
+            throws CustomerException;
 
-    public UserSessionDto updateCustomerPassword(CustomerDto customerDto, String token) throws CustomerNotFoundException;
+    public UserSessionDto updateCustomerPassword(CustomerDto customerDto, String token)
+            throws CustomerNotFoundException;
 
-    public UserSessionDto deleteCustomer(CustomerDto customerDto, String token) throws CustomerNotFoundException;
+    public UserSessionDto deleteCustomer(CustomerDto customerDto, String token)
+            throws CustomerNotFoundException;
 
-    public Customer updateAddress(Address address, String type, String token) throws CustomerException;
+    public Customer updateAddress(Address address, String type, String token)
+            throws CustomerException;
 
-    public Customer deleteAddress(String type, String token) throws CustomerException, CustomerNotFoundException;
+    public Customer deleteAddress(String type, String token)
+            throws CustomerException, CustomerNotFoundException;
 
-    public List<Order> getCustomerOrders(String token) throws CustomerException;
+    public List<Order> getCustomerOrders(String token)
+            throws CustomerException;
 }

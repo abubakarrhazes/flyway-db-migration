@@ -12,6 +12,5 @@ import java.util.Optional;
 public interface SellerRepository extends JpaRepository<Seller, Integer> {
     Optional<Seller> findByMobile(String mobile);
     Optional<Seller> findByEmailId(String emailId);
-    Optional<Seller> findByMobileNoOrEmailId(String mobileNo, String emailId);
 
 }
